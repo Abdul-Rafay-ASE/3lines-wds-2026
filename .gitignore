@@ -19,3 +19,6 @@ content_reference.md
 
 # Vercel deployment files
 .vercel/
+
+.vercel
+.env*.local
