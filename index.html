@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3lines advanced technologies Company | World Defense Show 2026 | Enterprise AI Innovation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --gold: #FFB800;
+            --gold-light: #FFC933;
+            --gold-dark: #CC9300;
+            --cyan: #00D4FF;
+            --cyan-light: #33DDFF;
+            --blue: #0A84FF;
+            --dark-bg: #0A0E1E;
+            --dark-card: #1A1E2E;
+            --dark-accent: #252A3E;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: white;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Animated Background with Particles */
+        .bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(ellipse at top, #1a1e2e 0%, #0a0e1e 100%);
+        }
+
+        .bg-canvas::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(circle at 20% 20%, rgba(255, 184, 0, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(0, 212, 255, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 40% 60%, rgba(10, 132, 255, 0.05) 0%, transparent 40%);
+            animation: particleMove 30s ease-in-out infinite;
+        }
+
+        @keyframes particleMove {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(20px, -20px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+
+        /* Mesh Gradient Overlay */
+        .mesh-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background:
+                radial-gradient(at 27% 37%, hsla(44, 100%, 50%, 0.15) 0px, transparent 50%),
+                radial-gradient(at 97% 21%, hsla(195, 100%, 50%, 0.15) 0px, transparent 50%),
+                radial-gradient(at 52% 99%, hsla(207, 100%, 50%, 0.15) 0px, transparent 50%),
+                radial-gradient(at 10% 29%, hsla(44, 100%, 50%, 0.15) 0px, transparent 50%);
+            filter: blur(100px);
+            opacity: 0.5;
+        }
+
+        /* Glass Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(26, 30, 46, 0.7);
+            backdrop-filter: blur(40px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 184, 0, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .header-content {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .logo {
+            height: 65px;
+            filter: drop-shadow(0 0 20px rgba(255, 184, 0, 0.4));
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .logo:hover {
+            transform: scale(1.08) rotate(-2deg);
+            filter: drop-shadow(0 0 30px rgba(255, 184, 0, 0.6));
+        }
+
+        .brand-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FFB800, #00D4FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+        }
+
+        .btn-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1.5px solid rgba(255, 184, 0, 0.3);
+            color: var(--gold);
+            padding: 0.9rem 1.8rem;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-glass::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 184, 0, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-glass:hover::before {
+            left: 100%;
+        }
+
+        .btn-glass:hover {
+            transform: translateY(-3px);
+            border-color: var(--gold);
+            box-shadow: 0 8px 32px rgba(255, 184, 0, 0.3);
+        }
+
+        .btn-glass.active {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--dark-bg);
+            border-color: var(--gold);
+        }
+
+        .wds-badge {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--dark-bg);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1.4rem;
+            box-shadow: 0 8px 32px rgba(255, 184, 0, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            animation: badgePulse 3s ease infinite;
+        }
+
+        @keyframes badgePulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 8px 32px rgba(255, 184, 0, 0.4); }
+            50% { transform: scale(1.03); box-shadow: 0 12px 48px rgba(255, 184, 0, 0.6); }
+        }
+
+        /* Hero Section with Premium Layout */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 2rem;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            text-align: center;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: rgba(255, 184, 0, 0.1);
+            border: 1.5px solid rgba(255, 184, 0, 0.3);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            color: var(--gold-light);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(4rem, 12vw, 10rem);
+            font-weight: 700;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #FFFFFF 0%, #FFB800 40%, #00D4FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -3px;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.4rem, 3vw, 2.2rem);
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            max-width: 900px;
+            margin: 0 auto 1rem;
+            animation: fadeInUp 1s ease 0.4s backwards;
+        }
+
+        .hero-highlights {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2.5rem 0;
+            animation: fadeInUp 1s ease 0.6s backwards;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-size: 1.3rem;
+            color: var(--gold-light);
+            font-weight: 600;
+        }
+
+        .highlight-item i {
+            font-size: 1.6rem;
+            color: var(--cyan);
+        }
+
+        .event-banner {
+            display: inline-flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: rgba(10, 132, 255, 0.1);
+            border: 1.5px solid rgba(10, 132, 255, 0.3);
+            padding: 1.2rem 3rem;
+            border-radius: 20px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--cyan-light);
+            margin: 3rem 0;
+            animation: fadeInUp 1s ease 0.8s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Premium AI Agents Section */
+        .agents-section {
+            padding: 8rem 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1.5px solid rgba(0, 212, 255, 0.3);
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            color: var(--cyan-light);
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(3rem, 7vw, 6rem);
+            font-weight: 700;
+            background: linear-gradient(135deg, #FFFFFF, #00D4FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+        }
+
+        .section-desc {
+            font-size: clamp(1.2rem, 2vw, 1.6rem);
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Agents Grid - All 3 Visible */
+        .agents-grid {
+            max-width: 1800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .agent-card {
+            background: rgba(26, 30, 46, 0.6);
+            backdrop-filter: blur(40px);
+            border: 1.5px solid rgba(255, 184, 0, 0.2);
+            border-radius: 40px;
+            padding: 4rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .agent-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--cyan));
+        }
+
+        .agent-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            border-color: rgba(255, 184, 0, 0.5);
+            box-shadow: 0 36px 90px rgba(255, 184, 0, 0.4);
+        }
+
+        .agent-content {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+
+        .agent-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--dark-bg);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+
+        .agent-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #FFFFFF, #00D4FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .agent-desc {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.9;
+            margin-bottom: 2.5rem;
+        }
+
+        .demo-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--dark-bg);
+            padding: 1.5rem 3.5rem;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            text-decoration: none;
+            box-shadow: 0 8px 32px rgba(255, 184, 0, 0.4);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .demo-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .demo-btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .demo-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 16px 48px rgba(255, 184, 0, 0.6);
+        }
+
+        .agent-visual {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .icon-orbit {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border: 2px solid rgba(255, 184, 0, 0.2);
+            border-radius: 50%;
+            animation: orbitRotate 30s linear infinite;
+        }
+
+        @keyframes orbitRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .icon-orbit::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: var(--gold);
+            border-radius: 50%;
+            box-shadow: 0 0 20px var(--gold);
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .agent-icon {
+            font-size: 18rem;
+            background: linear-gradient(135deg, var(--gold), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 60px rgba(255, 184, 0, 0.4));
+            animation: iconFloat 6s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        @keyframes iconFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-25px) scale(1.08); }
+        }
+
+
+        /* Infrastructure Grid */
+        .infrastructure-section {
+            padding: 8rem 2rem;
+            position: relative;
+        }
+
+        .infra-grid {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2.5rem;
+            margin-top: 5rem;
+        }
+
+        .infra-card {
+            background: rgba(26, 30, 46, 0.5);
+            backdrop-filter: blur(20px);
+            border: 1.5px solid rgba(255, 255, 255, 0.1);
+            border-radius: 32px;
+            padding: 4rem 3rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .infra-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--cyan));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s;
+        }
+
+        .infra-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .infra-card:hover {
+            transform: translateY(-12px);
+            border-color: rgba(255, 184, 0, 0.4);
+            box-shadow: 0 24px 64px rgba(255, 184, 0, 0.2);
+        }
+
+        .infra-icon {
+            font-size: 4.5rem;
+            background: linear-gradient(135deg, var(--gold), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        .infra-card:hover .infra-icon {
+            animation: iconBounce 0.6s ease;
+        }
+
+        @keyframes iconBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        .infra-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .infra-desc {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+        }
+
+        .infra-desc strong {
+            color: var(--gold-light);
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 8rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .team-header {
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+
+        .team-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .team-subtitle {
+            font-size: clamp(1.2rem, 2vw, 1.6rem);
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-card {
+            background: rgba(26, 30, 46, 0.5);
+            backdrop-filter: blur(40px);
+            border: 1.5px solid rgba(255, 184, 0, 0.15);
+            border-radius: 30px;
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .team-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--cyan));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease;
+        }
+
+        .team-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .team-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            border-color: rgba(255, 184, 0, 0.4);
+            box-shadow: 0 25px 60px rgba(255, 184, 0, 0.2);
+        }
+
+        .team-glow {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(255, 184, 0, 0.15), transparent);
+            border-radius: 50%;
+            top: -50px;
+            right: -50px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
+        .team-card:hover .team-glow {
+            opacity: 1;
+        }
+
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background: linear-gradient(135deg, rgba(255, 184, 0, 0.15), rgba(0, 212, 255, 0.15));
+            border: 2px solid rgba(255, 184, 0, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .team-card:hover .team-avatar {
+            transform: scale(1.1) rotate(10deg);
+            border-color: var(--gold);
+            box-shadow: 0 0 40px rgba(255, 184, 0, 0.3);
+        }
+
+        .team-avatar i {
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--gold), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .team-info {
+            position: relative;
+            z-index: 1;
+        }
+
+        .team-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .team-role {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .team-badge {
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            background: rgba(255, 184, 0, 0.1);
+            border: 1px solid rgba(255, 184, 0, 0.3);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover .team-badge {
+            background: rgba(255, 184, 0, 0.2);
+            border-color: var(--gold);
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(10, 14, 30, 0.9);
+            border-top: 1px solid rgba(255, 184, 0, 0.2);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .footer-wds {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.2rem;
+            color: var(--gold);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .footer-info {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin: 1rem 0;
+        }
+
+        .footer a:hover {
+            color: var(--gold) !important;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 1400px) {
+            .agents-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .agents-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+
+            .agent-card {
+                padding: 3rem;
+            }
+
+            .agent-icon {
+                font-size: 12rem;
+            }
+
+            .icon-orbit {
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .agent-icon {
+                font-size: 10rem;
+            }
+
+            .icon-orbit {
+                width: 300px;
+                height: 300px;
+            }
+
+            .infra-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-highlights {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .team-section {
+                padding: 5rem 1.5rem;
+            }
+
+            .team-header {
+                margin-bottom: 4rem;
+            }
+
+            .agents-section {
+                padding: 5rem 1.5rem;
+            }
+
+            .agent-card {
+                padding: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-canvas"></div>
+    <div class="mesh-gradient"></div>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-group">
+                <img src="logo-removebg-preview.png" alt="Three Lines" class="logo">
+                <div class="brand-text">3lines advanced technologies Company</div>
+            </div>
+            <div class="header-actions">
+                <button class="btn-glass" id="autoScrollBtn">
+                    <i class="fas fa-arrows-alt-v"></i>
+                    <span>Auto Scroll</span>
+                </button>
+                <div class="wds-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span>WDS 2026</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-tag">
+                <i class="fas fa-globe"></i>
+                <span>World Defense Show 2026</span>
+            </div>
+            <h1 class="hero-title">AI Innovation<br>for Defense</h1>
+            <p class="hero-subtitle">We built everything from scratch. Our own servers. Our own AI models. All in Saudi Arabia.</p>
+            <div class="hero-highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-server"></i>
+                    <span>We Built Our Own Servers</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Your Data Never Leaves Saudi</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-flag"></i>
+                    <span>100% Saudi Technology</span>
+                </div>
+            </div>
+            <div class="event-banner">
+                <i class="fas fa-calendar-alt"></i>
+                <span>February 8-12, 2026</span>
+                <span>|</span>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Riyadh, Saudi Arabia</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="agents-section">
+        <div class="section-header">
+            <span class="section-label">What We Built</span>
+            <h2 class="section-title">Three AI Agents</h2>
+            <p class="section-desc">Built for defense companies. Powered by our own AI infrastructure. No cloud dependencies.</p>
+        </div>
+
+        <div class="agents-grid">
+            <!-- Agent 1: Procurement -->
+            <div class="agent-card">
+                <div class="agent-content">
+                    <span class="agent-badge">AI Agent 01</span>
+                    <h3 class="agent-title">Procurement Intelligence</h3>
+                    <p class="agent-desc">Analyzes 1000+ suppliers, predicts prices before you ask, generates RFQs automatically, and keeps you GAMI compliant</p>
+                    <a href="https://snp.ai3lines.com/" target="_blank" class="demo-btn">
+                        <i class="fas fa-rocket"></i>
+                        <span>Live Platform Demo</span>
+                    </a>
+                </div>
+                <div class="agent-visual">
+                    <div class="icon-orbit"></div>
+                    <div class="agent-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agent 2: HR -->
+            <div class="agent-card">
+                <div class="agent-content">
+                    <span class="agent-badge">AI Agent 02</span>
+                    <h3 class="agent-title">HR Intelligence</h3>
+                    <p class="agent-desc">Screens candidates with 95% accuracy, tracks security clearances, speaks Arabic and English, and works 24/7</p>
+                    <a href="https://careers.ai3lines.com" target="_blank" class="demo-btn">
+                        <i class="fas fa-rocket"></i>
+                        <span>Live Platform Demo</span>
+                    </a>
+                </div>
+                <div class="agent-visual">
+                    <div class="icon-orbit"></div>
+                    <div class="agent-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agent 3: Sales & CRM -->
+            <div class="agent-card">
+                <div class="agent-content">
+                    <span class="agent-badge">AI Agent 03</span>
+                    <h3 class="agent-title">Sales & CRM Intelligence</h3>
+                    <p class="agent-desc">Scores leads before you meet them, analyzes government contracts, understands customer intent, and recommends deals</p>
+                    <a href="https://snp.ai3lines.com/" target="_blank" class="demo-btn">
+                        <i class="fas fa-rocket"></i>
+                        <span>Live Platform Demo</span>
+                    </a>
+                </div>
+                <div class="agent-visual">
+                    <div class="icon-orbit"></div>
+                    <div class="agent-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infrastructure-section">
+        <div class="section-header">
+            <span class="section-label">How We Built It</span>
+            <h2 class="section-title">Our AI Infrastructure</h2>
+            <p class="section-desc">We didn't rent servers or use cloud services. We built everything ourselves in Saudi Arabia.</p>
+        </div>
+
+        <div class="infra-grid">
+            <div class="infra-card">
+                <i class="fas fa-server infra-icon"></i>
+                <h3 class="infra-title">We Built Our Own Servers</h3>
+                <p class="infra-desc"><strong>Why it matters:</strong> NVIDIA A100 GPUs running in Saudi Arabia. We don't use AWS, Azure, or Google. We control everything.</p>
+            </div>
+            <div class="infra-card">
+                <i class="fas fa-brain infra-icon"></i>
+                <h3 class="infra-title">We Trained Our Own AI Models</h3>
+                <p class="infra-desc"><strong>Built for defense:</strong> Trained on defense and aerospace data. Understands Arabic and English. Gets smarter every day.</p>
+            </div>
+            <div class="infra-card">
+                <i class="fas fa-network-wired infra-icon"></i>
+                <h3 class="infra-title">Built the Full Stack</h3>
+                <p class="infra-desc"><strong>Everything we need:</strong> Data centers with backup power. Custom APIs. Live monitoring. Automatic updates.</p>
+            </div>
+            <div class="infra-card">
+                <i class="fas fa-shield-alt infra-icon"></i>
+                <h3 class="infra-title">Your Data Stays Here</h3>
+                <p class="infra-desc"><strong>Simple promise:</strong> Your data never leaves Saudi Arabia. GAMI compliant. Military-grade security. Can run offline if needed.</p>
+            </div>
+            <div class="infra-card">
+                <i class="fas fa-bolt infra-icon"></i>
+                <h3 class="infra-title">Fast and Reliable</h3>
+                <p class="infra-desc"><strong>Performance you need:</strong> Responds in under 100ms. Works 99.9% of the time. Handles 10,000+ requests at once. Backed up across Saudi Arabia.</p>
+            </div>
+            <div class="infra-card">
+                <i class="fas fa-tools infra-icon"></i>
+                <h3 class="infra-title">Built in Saudi Arabia</h3>
+                <p class="infra-desc"><strong>Why we did this:</strong> No foreign dependencies. All technology stays here. We train Saudi engineers. We're building Saudi Arabia's AI future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="team-header">
+            <h2 class="team-title">Meet Our Team</h2>
+            <p class="team-subtitle">The people who built this technology from scratch</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Khaled Bin Salman</h3>
+                    <p class="team-role">Head of AI Department</p>
+                    <div class="team-badge">Leadership</div>
+                </div>
+                <div class="team-glow"></div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Abdul Rafay</h3>
+                    <p class="team-role">Software Engineer</p>
+                    <div class="team-badge">Development</div>
+                </div>
+                <div class="team-glow"></div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Abdul Rahman</h3>
+                    <p class="team-role">AI Engineer</p>
+                    <div class="team-badge">AI/ML</div>
+                </div>
+                <div class="team-glow"></div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Rihan Alqahtani</h3>
+                    <p class="team-role">AI Engineer</p>
+                    <div class="team-badge">AI/ML</div>
+                </div>
+                <div class="team-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-wds">★ Visit Us at World Defense Show 2026 ★</div>
+        <p class="footer-info"><strong>3lines advanced technologies Company</strong></p>
+        <p class="footer-info" style="color: var(--gold);">Saudi Arabia's first company to build complete AI infrastructure</p>
+        <p class="footer-info">We built everything: Servers, AI models, the full stack. GAMI licensed. 100% Saudi.</p>
+        <p style="margin-top: 1.5rem; opacity: 0.9; font-size: 1.2rem;">
+            Booth: Saudi Supply Chain Zone | Live AI Dashboard Demonstrations
+        </p>
+        <div style="margin-top: 2rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-size: 1.1rem;">
+            <a href="https://3lines.com.sa/en" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">
+                <i class="fas fa-globe"></i> 3lines.com.sa
+            </a>
+            <a href="https://snp.ai3lines.com/" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">
+                <i class="fas fa-chart-network"></i> snp.ai3lines.com
+            </a>
+            <a href="https://careers.ai3lines.com" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">
+                <i class="fas fa-briefcase"></i> careers.ai3lines.com
+            </a>
+            <a href="https://www.linkedin.com/company/3lines/about/" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Auto-scroll
+        let autoScrollEnabled = false;
+        const autoScrollBtn = document.getElementById('autoScrollBtn');
+
+        function startAutoScroll() {
+            autoScrollEnabled = true;
+            autoScrollBtn.classList.add('active');
+            let scrollPos = 0;
+
+            function scroll() {
+                if (!autoScrollEnabled) return;
+                const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+                if (scrollPos < maxScroll) {
+                    scrollPos += 0.5;
+                    window.scrollTo({ top: scrollPos, behavior: 'instant' });
+                    requestAnimationFrame(scroll);
+                } else {
+                    setTimeout(() => {
+                        if (autoScrollEnabled) {
+                            scrollPos = 0;
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                            setTimeout(() => autoScrollEnabled && scroll(), 2000);
+                        }
+                    }, 3000);
+                }
+            }
+            scroll();
+        }
+
+        function stopAutoScroll() {
+            autoScrollEnabled = false;
+            autoScrollBtn.classList.remove('active');
+        }
+
+        autoScrollBtn.addEventListener('click', () => {
+            autoScrollEnabled ? stopAutoScroll() : startAutoScroll();
+        });
+
+        window.addEventListener('wheel', () => autoScrollEnabled && stopAutoScroll());
+        window.addEventListener('touchstart', () => autoScrollEnabled && stopAutoScroll());
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'a' || e.key === 'A') {
+                autoScrollEnabled ? stopAutoScroll() : startAutoScroll();
+            }
+            if (e.key === 'F11') {
+                e.preventDefault();
+                document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+            }
+        });
+    </script>
+</body>
+</html>
