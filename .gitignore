@@ -1,0 +1,21 @@
+# Ignore old/development files
+3Lines_AI_Department*.html
+3Lines_WDS2026_Display.html
+3Lines_WDS2026_Final.html
+Weekly_Progress_Report*.html
+Weekly_Progress_Report*.pdf
+Weekly_Report*.pdf
+Week*_Report*.docx
+
+# Ignore Office files
+*.pptx
+
+# Ignore Python scripts and JSON
+create_presentation.py
+slide_content.json
+content_reference.md
+
+# Keep only essential WDS 2026 files
+
+# Vercel deployment files
+.vercel/
