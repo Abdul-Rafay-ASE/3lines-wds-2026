@@ -1,13 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.png",
-      "use": "@vercel/static"
-    }
-  ]
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "framework": null
 }
