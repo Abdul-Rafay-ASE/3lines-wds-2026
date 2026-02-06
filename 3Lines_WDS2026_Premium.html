@@ -809,6 +809,44 @@
         }
 
         @media (max-width: 768px) {
+            /* Header Mobile */
+            .header-content {
+                padding: 1rem 1.5rem;
+            }
+
+            .logo {
+                height: 50px;
+            }
+
+            .brand-text {
+                font-size: 1.2rem;
+            }
+
+            .header-actions {
+                gap: 0.8rem;
+            }
+
+            .auto-scroll-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .wds-badge-header {
+                padding: 0.7rem 1.2rem;
+                font-size: 1rem;
+            }
+
+            /* Hero Mobile */
+            .hero-section {
+                padding: 4rem 1.5rem;
+            }
+
+            .hero-highlights {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            /* Agents Mobile */
             .agent-icon {
                 font-size: 10rem;
             }
@@ -818,15 +856,24 @@
                 height: 300px;
             }
 
+            .agents-section {
+                padding: 5rem 1.5rem;
+            }
+
+            .agent-card {
+                padding: 2.5rem;
+            }
+
+            /* Infrastructure Mobile */
             .infra-grid {
                 grid-template-columns: 1fr;
             }
 
-            .hero-highlights {
-                flex-direction: column;
-                gap: 1rem;
+            .infra-section {
+                padding: 5rem 1.5rem;
             }
 
+            /* Team Mobile */
             .team-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
@@ -839,13 +886,79 @@
             .team-header {
                 margin-bottom: 4rem;
             }
+        }
 
+        /* Extra Small Phones */
+        @media (max-width: 480px) {
+            /* Header Extra Small */
+            .header-content {
+                padding: 0.8rem 1rem;
+                flex-wrap: wrap;
+                gap: 0.8rem;
+            }
+
+            .logo {
+                height: 40px;
+            }
+
+            .brand-text {
+                font-size: 1rem;
+            }
+
+            .header-actions {
+                flex-direction: column;
+                width: 100%;
+                gap: 0.5rem;
+            }
+
+            .auto-scroll-btn,
+            .wds-badge-header {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            /* Hero Extra Small */
+            .hero-section {
+                padding: 3rem 1rem;
+            }
+
+            /* Agents Extra Small */
             .agents-section {
-                padding: 5rem 1.5rem;
+                padding: 4rem 1rem;
             }
 
             .agent-card {
-                padding: 2.5rem;
+                padding: 2rem 1.5rem;
+            }
+
+            .agent-icon {
+                font-size: 8rem;
+            }
+
+            .icon-orbit {
+                width: 250px;
+                height: 250px;
+            }
+
+            /* Infrastructure Extra Small */
+            .infra-section {
+                padding: 4rem 1rem;
+            }
+
+            .infra-card {
+                padding: 2rem 1.5rem;
+            }
+
+            /* Team Extra Small */
+            .team-section {
+                padding: 4rem 1rem;
+            }
+
+            .team-card {
+                padding: 2rem 1.5rem;
             }
         }
     </style>
