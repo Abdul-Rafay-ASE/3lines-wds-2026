@@ -1,24 +1,34 @@
-# Ignore old/development files
+# ── WDS 2026 Repository – .gitignore ────────────────────
+# Only essential presentation files are tracked in this repo.
+
+# ── Old / Development Files ──────────────────────────────
 3Lines_AI_Department*.html
 3Lines_WDS2026_Display.html
 3Lines_WDS2026_Final.html
+
+# ── Weekly Progress Reports (internal, not for repo) ─────
 Weekly_Progress_Report*.html
 Weekly_Progress_Report*.pdf
+Weekly_Progress_Report*.docx
 Weekly_Report*.pdf
 Week*_Report*.docx
+Week*_Report*.pdf
 
-# Ignore Office files
+# ── Office & Presentation Files ──────────────────────────
 *.pptx
+*.docx
 
-# Ignore Python scripts and JSON
+# ── Python Scripts ────────────────────────────────────────
 create_presentation.py
 slide_content.json
 content_reference.md
 
-# Keep only essential WDS 2026 files
+# ── Node.js ───────────────────────────────────────────────
+node_modules/
+package.json
+package-lock.json
+*.mjs
 
-# Vercel deployment files
+# ── Vercel ────────────────────────────────────────────────
 .vercel/
-
-.vercel
 .env*.local
